@@ -1,0 +1,32 @@
+package BuAmalia;
+import java.util.Scanner;
+
+public class Tugas3 {
+    public static void main(String[] args) {
+        Scanner input =new Scanner(System.in);
+        System.out.print("Masukkan angka ke-01: ");
+        int satu=input.nextInt();
+        System.out.print("Masukkan angka ke-02: ");
+        int dua=input.nextInt();
+        System.out.print("Masukkan angka ke-03: ");
+        int tiga=input.nextInt();
+        System.out.print("Masukkan angka ke-04: ");
+        int empat=input.nextInt();
+        System.out.print("Masukkan angka ke-05: ");
+        int lima=input.nextInt();
+        
+        int rata_rata=(satu+dua+tiga+empat+lima);
+        int hasil=rata_rata/5;
+        
+        if(hasil<60){
+            System.out.println(hasil+" Kurang");
+        }else if(hasil<=70){
+            System.out.println(hasil+" Cukup");
+        }else if(hasil<=80){
+            System.out.println(hasil+" baik");
+        }else if(hasil>80){
+            System.out.println(hasil+" luar biasa");
+        }  
+    }
+    
+}
